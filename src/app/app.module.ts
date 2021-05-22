@@ -10,7 +10,8 @@ import { StudentListComponent } from './student/student-list/student-list.compon
 import { StudentItemComponent } from './student/student-item/student-item.component';
 import { StudentDetailComponent } from './student/student-detail/student-detail.component';
 import { StudentEditComponent } from './student/student-edit/student-edit.component';
-
+import { AppRoutingModule } from './app-routing.module';
+import { StudentStartComponent } from './student/student-start/student-start.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,13 +21,11 @@ import { StudentEditComponent } from './student/student-edit/student-edit.compon
     StudentListComponent,
     StudentItemComponent,
     StudentDetailComponent,
-    StudentEditComponent
+    StudentEditComponent,
+    StudentStartComponent,
   ],
-  imports: [
-    BrowserModule,
-    NgbModule
-  ],
+  imports: [BrowserModule, NgbModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
